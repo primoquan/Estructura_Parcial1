@@ -1,8 +1,18 @@
+package Main;
+
+
+import CargarDatos.CargaDatosCSV;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
+
+
 public class ProyectoOrdenamiento {
+
+    public static List<Integer> listaDatos = new ArrayList<>();
 
     public static void mostrarInformacion() {
         // Datos fijos del proyecto
@@ -20,13 +30,14 @@ public class ProyectoOrdenamiento {
         // Listas de tareas completadas y pendientes
         List<String> puntosHechos = new ArrayList<>();
         List<String> puntosFaltantes = new ArrayList<>();
+        
 
         // Se inicia el proyecto con los primeros puntos completados
         puntosHechos.add("1. Información del Desarrollador");
         puntosHechos.add("2. Menú Principal");
+        puntosHechos.add("3. Carga de Datos desde un CSV");
 
         // Lista de tareas restantes
-        puntosFaltantes.add("3. Carga de Datos desde un CSV");
         puntosFaltantes.add("4. Algoritmo de Ordenamiento - Bubble Sort");
         puntosFaltantes.add("5. Algoritmo de Ordenamiento - Enhanced Bubble Sort");
         puntosFaltantes.add("6. Algoritmo de Ordenamiento - Quick Sort");
@@ -86,7 +97,7 @@ public class ProyectoOrdenamiento {
             // Ejecutar la acción correspondiente
             switch (opcion) {
                 case 1:
-                    System.out.println("📂 Opción seleccionada: Cargar datos desde un CSV (Pendiente de implementación).");
+                    CargaDatosCSV.opcionCargarDatos(scanner, listaDatos);
                     break;
                 case 2:
                     System.out.println("🔄 Opción seleccionada: Bubble Sort (Pendiente de implementación).");
