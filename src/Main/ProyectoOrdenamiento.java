@@ -21,11 +21,11 @@ public class ProyectoOrdenamiento {
         List<String> puntosHechos = new ArrayList<>();
         List<String> puntosFaltantes = new ArrayList<>();
 
-        // Se inicia el proyecto con el Punto 1 completado
+        // Se inicia el proyecto con los primeros puntos completados
         puntosHechos.add("1. Información del Desarrollador");
+        puntosHechos.add("2. Menú Principal");
 
         // Lista de tareas restantes
-        puntosFaltantes.add("2. Menú Principal");
         puntosFaltantes.add("3. Carga de Datos desde un CSV");
         puntosFaltantes.add("4. Algoritmo de Ordenamiento - Bubble Sort");
         puntosFaltantes.add("5. Algoritmo de Ordenamiento - Enhanced Bubble Sort");
@@ -60,11 +60,62 @@ public class ProyectoOrdenamiento {
         System.out.println("Presione Enter para continuar...");
         scanner.nextLine();  // Captura la entrada del usuario
 
-        // Cerrar el scanner
-        scanner.close();
+        // Llamar al menú principal
+        mostrarMenu(scanner);
+    }
+
+    public static void mostrarMenu(Scanner scanner) {
+        int opcion;
+        do {
+            // Mostrar opciones
+            System.out.println("\n========== MENÚ PRINCIPAL ==========");
+            System.out.println("1. Cargar datos desde un archivo CSV");
+            System.out.println("2. Ordenar datos usando Bubble Sort");
+            System.out.println("3. Ordenar datos usando Enhanced Bubble Sort");
+            System.out.println("4. Ordenar datos usando Quick Sort");
+            System.out.println("5. Ordenar datos usando Selection Sort");
+            System.out.println("6. Ordenar datos usando Merge Sort");
+            System.out.println("7. Buscar un número con Binary Search");
+            System.out.println("8. Salir");
+            System.out.print("Ingrese una opción: ");
+
+            // Leer opción del usuario
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Limpiar el buffer
+
+            // Ejecutar la acción correspondiente
+            switch (opcion) {
+                case 1:
+                    System.out.println("📂 Opción seleccionada: Cargar datos desde un CSV (Pendiente de implementación).");
+                    break;
+                case 2:
+                    System.out.println("🔄 Opción seleccionada: Bubble Sort (Pendiente de implementación).");
+                    break;
+                case 3:
+                    System.out.println("🔄 Opción seleccionada: Enhanced Bubble Sort (Pendiente de implementación).");
+                    break;
+                case 4:
+                    System.out.println("⚡ Opción seleccionada: Quick Sort (Pendiente de implementación).");
+                    break;
+                case 5:
+                    System.out.println("🎯 Opción seleccionada: Selection Sort (Pendiente de implementación).");
+                    break;
+                case 6:
+                    System.out.println("🔀 Opción seleccionada: Merge Sort (Pendiente de implementación).");
+                    break;
+                case 7:
+                    System.out.println("🔎 Opción seleccionada: Binary Search (Pendiente de implementación).");
+                    break;
+                case 8:
+                    System.out.println("👋 Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("⚠️ Opción no válida. Intente de nuevo.");
+            }
+        } while (opcion != 8);
     }
 
     public static void main(String[] args) {
-        mostrarInformacion();  // Llamamos a la función para ejecutarla
+        mostrarInformacion();  // Llamamos a la función principal
     }
 }
