@@ -1,7 +1,7 @@
 package Main;
 
 
-import CargarDatos.CargaDatosCSV;
+import CargarDatos.CargarDatosCSV;
 import Ordenar.BubbleSort;
 import Ordenar.EnhancedBubbleSort;
 import Ordenar.MergeSort;
@@ -105,7 +105,7 @@ public class ProyectoOrdenamiento {
             // Ejecutar la acción correspondiente
             switch (opcion) {
                 case 1:
-                    CargaDatosCSV.opcionCargarDatos(scanner, listaDatos);
+                    CargarDatosCSV.opcionCargarDatos(listaDatos);
                     break;
                 case 2:
                     BubbleSort.opcionBubbleSort(listaDatos);
