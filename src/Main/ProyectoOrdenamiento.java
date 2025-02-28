@@ -7,6 +7,7 @@ import Ordenar.EnhancedBubbleSort;
 import Ordenar.MergeSort;
 import Ordenar.QuickSort;
 import Ordenar.SelectionSort;
+import Buscar.BinarySearch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,10 +47,11 @@ public class ProyectoOrdenamiento {
         puntosHechos.add("6. Algoritmo de Ordenamiento - Quick Sort");
         puntosHechos.add("7. Algoritmo de Ordenamiento - Selection Sort");
         puntosHechos.add("8. Algoritmo de Ordenamiento - Merge Sort");
+        puntosHechos.add("9. Algoritmo de Búsqueda - Binary Search");
 
         // Lista de tareas restantes
         
-        puntosFaltantes.add("9. Algoritmo de Búsqueda - Binary Search");
+        
         puntosFaltantes.add("10. Presentación Final en YouTube");
 
         // Mostrar la información en consola
@@ -121,7 +123,7 @@ public class ProyectoOrdenamiento {
                     MergeSort.opcionMergeSort(listaDatos);
                     break;
                 case 7:
-                    System.out.println("🔎 Opción seleccionada: Binary Search (Pendiente de implementación).");
+                    BinarySearch.opcionBinarySearch(listaDatos);
                     break;
                 case 8:
                     System.out.println("👋 Saliendo del programa...");
@@ -134,5 +136,5 @@ public class ProyectoOrdenamiento {
 
     public static void main(String[] args) {
         mostrarInformacion();  // Llamamos a la función principal
-    }
+    }   
 }
