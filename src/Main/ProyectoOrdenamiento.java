@@ -5,6 +5,7 @@ import CargarDatos.CargaDatosCSV;
 import Ordenar.BubbleSort;
 import Ordenar.EnhancedBubbleSort;
 import Ordenar.QuickSort;
+import Ordenar.SelectionSort;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,12 +43,9 @@ public class ProyectoOrdenamiento {
         puntosHechos.add("4. Algoritmo de Ordenamiento - Bubble Sort");
         puntosHechos.add("5. Algoritmo de Ordenamiento - Enhanced Bubble Sort");
         puntosHechos.add("6. Algoritmo de Ordenamiento - Quick Sort");
+        puntosHechos.add("7. Algoritmo de Ordenamiento - Selection Sort");
 
         // Lista de tareas restantes
-        
-        
-        
-        puntosFaltantes.add("7. Algoritmo de Ordenamiento - Selection Sort");
         puntosFaltantes.add("8. Algoritmo de Ordenamiento - Merge Sort");
         puntosFaltantes.add("9. Algoritmo de Búsqueda - Binary Search");
         puntosFaltantes.add("10. Presentación Final en YouTube");
@@ -115,7 +113,7 @@ public class ProyectoOrdenamiento {
                     QuickSort.opcionQuickSort(listaDatos);
                     break;
                 case 5:
-                    System.out.println("🎯 Opción seleccionada: Selection Sort (Pendiente de implementación).");
+                    SelectionSort.opcionSelectionSort(listaDatos);
                     break;
                 case 6:
                     System.out.println("🔀 Opción seleccionada: Merge Sort (Pendiente de implementación).");
