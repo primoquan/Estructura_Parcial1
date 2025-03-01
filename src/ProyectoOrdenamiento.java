@@ -47,11 +47,10 @@ public class ProyectoOrdenamiento {
         puntosHechos.add("7. Algoritmo de Ordenamiento - Selection Sort");
         puntosHechos.add("8. Algoritmo de Ordenamiento - Merge Sort");
         puntosHechos.add("9. Algoritmo de Búsqueda - Binary Search");
+        puntosHechos.add("10. Presentación Final en YouTube");
 
         // Lista de tareas restantes
         
-        
-        puntosFaltantes.add("10. Presentación Final en YouTube");
 
         // Mostrar la información en consola
         System.out.println("\n========================================");
