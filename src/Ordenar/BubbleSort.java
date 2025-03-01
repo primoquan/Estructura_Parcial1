@@ -4,6 +4,7 @@ import java.util.List;
 
 public class BubbleSort {
     public static void ordenar(List<Integer> lista) {
+        System.out.println("Lista desordenada: " + lista);
         int n = lista.size();
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {

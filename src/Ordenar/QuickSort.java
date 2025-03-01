@@ -4,6 +4,7 @@ import java.util.List;
 
 public class QuickSort {
     public static void ordenar(List<Integer> lista, int inicio, int fin) {
+        
         if (inicio < fin) {
             int indicePivote = particion(lista, inicio, fin);
             ordenar(lista, inicio, indicePivote - 1);
@@ -12,6 +13,7 @@ public class QuickSort {
     }
 
     private static int particion(List<Integer> lista, int inicio, int fin) {
+        
         int pivote = lista.get(fin);  // Elegimos el último elemento como pivote
         int i = inicio - 1;
 
@@ -38,6 +40,7 @@ public class QuickSort {
             System.out.println("❌ No hay datos cargados. Cargue datos primero.");
             return;
         }
+        System.out.println("Lista desordenada: " + lista);
         ordenar(lista, 0, lista.size() - 1);
         System.out.println("✅ Lista ordenada con Quick Sort.");
         System.out.println("📊 Lista ordenada: " + lista);

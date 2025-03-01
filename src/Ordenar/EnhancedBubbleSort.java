@@ -4,6 +4,7 @@ import java.util.List;
 
 public class EnhancedBubbleSort {
     public static void ordenar(List<Integer> lista) {
+        System.out.println("Lista desordenada: " + lista);
         int n = lista.size();
         boolean intercambiado;
         

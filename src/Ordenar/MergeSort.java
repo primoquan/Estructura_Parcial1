@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class MergeSort {
     public static void ordenar(List<Integer> lista) {
+        
         if (lista.size() < 2) {
             return; // Caso base: lista con un solo elemento ya está ordenada
         }
@@ -20,6 +21,8 @@ public class MergeSort {
     }
 
     private static void merge(List<Integer> lista, List<Integer> izquierda, List<Integer> derecha) {
+        
+
         int i = 0, j = 0, k = 0;
 
         // Mezclar las dos listas ordenadas
@@ -47,6 +50,7 @@ public class MergeSort {
             System.out.println("❌ No hay datos cargados. Cargue datos primero.");
             return;
         }
+        System.out.println("Lista desordenada: " + lista);
         ordenar(lista);
         System.out.println("✅ Lista ordenada con Merge Sort.");
         System.out.println("📊 Lista ordenada: " + lista);
