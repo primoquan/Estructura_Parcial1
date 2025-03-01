@@ -125,7 +125,7 @@ public class ProyectoOrdenamiento {
                     BinarySearch.opcionBinarySearch(listaDatos);
                     break;
                 case 8:
-                    System.out.println("👋 Saliendo del programa...");
+                    System.out.println("👋 Saliendo del programa... Gracias por utilizar este programa de ordenamiento... Hasta la proxima! 👋");
                     break;
                 default:
                     System.out.println("⚠️ Opción no válida. Intente de nuevo.");
